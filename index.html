@@ -177,14 +177,14 @@
 
     <!-- Popular Product -->
     <section> <!--h-[1000px] lg:w-full lg:h-[775px]   bg-[#EFEBE3] -->
-      <div class=" px-4 lg:px-28 py-28 bg-[#EFEBE3] justify-center align-center mx-auto ">
+      <div class=" px-4 lg:px-28 py-28 bg-[#EFEBE3] justify-center align-center  ">
         <div class="px-2 py-6 lg:py-32 lg:px-16"> <!--px-4 lg:px-28 py-28 -->
           <h2 class="pb-9 lg:pb-11 font-semibold text-4xl text-emerald-500 ">Popular Products</h2>
 
           <!-- product card -->
           <div class=" lg:flex gap-10 ">
             <!-- Left card -->
-            <div class=" w-[400px] lg:w-[424px] h-[423px] bg-gradient-to-l from-white to-lime-500   flex rounded-lg">
+            <div class=" w-[400px] lg:w-[424px] h-[423px] bg-gradient-to-l from-white to-lime-500  flex rounded-lg">
               <!-- bg-gradient-to-r from-lime-500 to-lime-400-->
               <div class="px-3 lg:px-6 py-12 space-y-4">
                 <h3 class="font-semibold text-white text-3xl ">30% off</h3>
@@ -192,14 +192,15 @@
                 <button class="w-[150px] h-[45px] bg-white rounded-lg font-medium">Buy Now</button>
               </div>
 
-              <div class="pt-56 ">
-                <img class="w-[400px] h-[200px]" src="./c2-assets/vegetable-offer.png" alt="">
+              <div class="pt-56 pr-4">
+                <img class="w-[500px] h-[200px]" src="./c2-assets/vegetable-offer.png" alt="">
               </div>
 
             </div>
 
             <!-- Right card -->
-            <div class="grid  grid-cols-2 lg:grid-cols-3 gap-x-9 lg:gap-x-5 lg:gap-y-5 "> <!--pl-28 -->
+            <div class="grid grid-rows-4 grid-flow-col gap-4 mt-7 lg:grid-rows-3 lg:grid-flow-col lg:gap-3">
+              <!--pl-28 -->
               <!-- add background 1 -->
               <div class="w-[275px]  h-[128px] bg-white rounded-lg">
                 <!-- grid use -->
@@ -440,7 +441,45 @@
         </div>
 
     </section>
+    <section>
+      <div class="flex items-center justify-center pt-6 mx-40 gap-10">
+        <div class="bg-green-500 shadow-lg rounded-xl p-6 ">
+          <h2 class="text-xl font-bold text-gray-800 mb-4">Payment Details</h2>
 
+          <div class="mb-4">
+            <label class="block text-gray-600 text-sm mb-2">Cardholder Name</label>
+            <input type="text" class="w-full p-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+              placeholder="John Doe">
+          </div>
+
+          <div class="mb-4">
+            <label class="block text-gray-600 text-sm mb-2">Card Number</label>
+            <input type="text" class="w-full p-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+              placeholder="1234 5678 9012 3456">
+          </div>
+
+          <div class="flex gap-4 mb-4">
+            <div class="w-1/2">
+              <label class="block text-gray-600 text-sm mb-2">Expiry Date</label>
+              <input type="text" class="w-full p-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+                placeholder="MM/YY">
+            </div>
+            <div class="w-1/2">
+              <label class="block text-gray-600 text-sm mb-2">CVV</label>
+              <input type="password" class="w-full p-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+                placeholder="•••">
+            </div>
+          </div>
+
+          <button class="w-full bg-blue-600 text-white p-2 rounded-lg hover:bg-blue-700">Pay Now</button>
+        </div>
+        <div class="text-center">
+          <h1 class="text-green-600 font-bold text-4xl lg:text-6xl">Online Payment <span
+              class="text-yellow-500">Side</span> </h1>
+        </div>
+      </div>
+
+    </section>
     <!-- arrival and offers -->
     <section class=" pt-12 pb-72 lg:pt-[140px] lg:pb-[390px]">
 
@@ -461,7 +500,7 @@
               <div class="w-28 lg:w-auto"><img src="./c2-assets/dawat-logo.png" alt=""></div>
               <button class="lg:px-[33px] xl:text-3xl btn bg-[#63B76D] border-0 text-white">Cook Exotic
                 Dishes</button>
-              <h2 class="text-xl lg:text-[0px]">UP to 20% OFF</h2>
+              <h2 class="text-xl lg:text-[40px]">UP to 20% OFF</h2>
             </div>
             <!-- img -->
             <div class="w-[30%]"><img src="./c2-assets/dawat-mock-up.png" alt=""></div>
@@ -481,6 +520,10 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <section>
+
     </section>
 
     <!-- news -->
